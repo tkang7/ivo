@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Enhanced line height for better readability */
+.doc-renderer {
+  line-height: 1.7;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Clause numbering styles */
+.clause-container {
+  position: relative;
+}
+
+.clause-number {
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Mention chip enhancements */
+.mention {
+  margin: 0 2px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* List styling improvements */
+ul.list-disc li {
+  padding-left: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .max-w-\[820px\] {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .doc-renderer h1 {
+    font-size: 2.5rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
