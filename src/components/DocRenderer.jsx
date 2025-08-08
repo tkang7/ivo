@@ -1,6 +1,6 @@
 import { Mention } from './Mention';
 
-function NodeRenderer({ node, depth = 0, isInOrderedList = false }) {
+function NodeRenderer({ node, depth = 0 }) {
   if (!node) return null;
   
   // Handle text nodes
@@ -195,7 +195,7 @@ export function DocRenderer({ node }) {
           <ol className="space-y-6 list-decimal ml-6">
             {mainClauses.map((clause, index) => (
               <li key={index} className="text-gray-700 mb-4">
-                <NodeRenderer node={clause} depth={1} isInOrderedList={true} />
+                <NodeRenderer node={clause} depth={1} />
               </li>
             ))}
           </ol>

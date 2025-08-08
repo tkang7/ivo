@@ -16,21 +16,9 @@ body {
   line-height: 1.7;
 }
 
-/* Clause numbering styles */
+/* Clause container styles */
 .clause-container {
   position: relative;
-}
-
-.clause-number {
-  font-size: 1.1rem;
-  color: #374151;
-}
-
-/* Mention chip enhancements */
-.mention {
-  margin: 0 2px;
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 /* List styling improvements */
@@ -40,11 +28,6 @@ ul.list-disc li {
 
 /* Responsive design */
 @media (max-width: 640px) {
-  .max-w-\[820px\] {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  
   .doc-renderer h1 {
     font-size: 2.5rem;
   }
