@@ -13,6 +13,7 @@ function App() {
         setLoading(true);
         setError(null);
         
+        // Fetch the sample input data
         const response = await fetch('/input_data/sample_input.json');
         
         if (!response.ok) {
